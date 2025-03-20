@@ -1,0 +1,199 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Libre Franklin;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+.img-container {
+  margin: 0;
+  width: 100vw;
+}
+
+img {
+  width: 17%;
+  margin-top: 5em;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 0.8em;
+  color: hsl(0, 0%, 59%);
+}
+
+strong {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: hsl(209, 33%, 12%);
+}
+
+header p {
+  font-weight: 100;
+  font-size: 1.1rem;
+  margin-top: -0.8em;
+  margin-bottom: 0.8em;
+  color: hsl(209, 33%, 12%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error::placeholder {
+  color: hsl(354, 100%, 66%);
+} /* .error is a class created from js using classList */
+
+.error-message {
+  color: hsl(354, 100%, 66%);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#mail.error-border {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+#mail::placeholder {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#mail:focus {
+  outline: none;
+  border-color: 1px solid hsl(223, 100%, 88%);;
+}
+
+#mail,
+#submit {
+  box-sizing: content-box;
+  border: 1px solid hsl(223, 100%, 88%);
+  width: 75%;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+}
+
+#submit {
+  width: 60%;
+  color: white;
+  margin-top: 0.8rem;
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: 5px 5px 10px hsl(223, 100%, 88%);
+}
+
+.illustration-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3em;
+}
+
+#illustration-image {
+  width: 80%;
+}
+
+.container-footer {
+  width: 100%;
+  margin-top: 2em;
+  padding-top: 4em;
+}
+
+.socia-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  height: auto;
+}
+
+ion-icon {
+  color: #3b5998;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: white;
+  color: blue;
+  padding: 0.3em;
+}
+
+.container-footer p {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (min-width: 600px) {
+  .img-container img {
+    width: 50px;
+  }
+
+  form {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  #mail,
+  #submit {
+    border-radius: 17.5px;
+    margin: 0;
+  }
+
+  #mail {
+    width: 300px;
+  }
+
+  #submit {
+    width: 100px;
+    margin-left: 1rem;
+  }
+
+  #submit:hover {
+    background-color: hsl(223, 100%, 88%);
+  }
+
+  #errorMessage {
+    display: none;
+    margin-left: -10rem;
+  }
+
+  ion-icon:hover {
+    color: hsl(223, 100%, 88%);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
